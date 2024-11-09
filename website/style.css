@@ -1,0 +1,449 @@
+/*-------------------------------------------- Font Style -----------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------- NAVBAR OR HEADER ----------------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    background-image: url('1.1.png'); /* Replace with your image file path */
+    background-size: cover; /* Ensures the image covers the entire navbar */
+    background-position: center; /* Centers the image within the navbar */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-left: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D3D9D4; /* Updated logo text color */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #D3D9D4; /* Updated link color */
+    font-size: 18px;
+}
+
+ul li a:hover {
+    cursor: pointer;
+    background: linear-gradient(#748D92, #124E66); /* Updated hover gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo a:hover {
+    cursor: pointer;
+    background: linear-gradient(#748D92, #124E66); /* Updated hover gradient for logo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*---------------------------------------------- MAIN WORKPLACE -------------------------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-container {
+    background: url('1.8.png') no-repeat left center; /* Align the background image to the left */
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start;
+    padding-top: 60px; /* Keep space for header */
+    padding-left: 20px; /* Optional: Add padding from the left for spacing */
+}
+
+#home {
+    background-image: url('1.8.png');
+    background-size: cover;
+    background-position: left center; /* Position background image to the left */
+    background-attachment: scroll;
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+.content {
+    text-align: left;
+    color: #fff;
+    max-width: 600px; /* Reduce the max width for a narrower card */
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+
+.content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 1rem;
+}
+
+.btn-container button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-container button:nth-child(1) {
+    background-color: #2E3944;
+    color: #D3D9D4;
+}
+
+.btn-container button:nth-child(2) {
+    background-color: #124E66;
+    color: #D3D9D4;
+}
+
+.btn-container button:hover {
+    transform: scale(1.1);
+}
+
+.btn-container button:nth-child(1):hover {
+    background-color: #212A31;
+}
+
+.btn-container button:nth-child(2):hover {
+    background-color: #748D92;
+}
+
+/*---------------------------------------------- About -------------------------------------------------------*/
+.about-section {
+    display: flex;
+    justify-content: flex-end;  /* Align content to the right */
+    align-items: center;        /* Keep the content vertically centered */
+    width: 100vw;               /* Full width of the viewport */
+    height: 100vh;              /* Full height of the viewport */
+    padding: 20px 0;            /* Reduced vertical padding */
+    background-color: #EDEDED;  /* Beige background */
+    background-image: url('1.5.png'); /* Add your background image here */
+    background-size: cover;     /* Ensure background image covers the entire section */
+    background-position: center;
+    box-sizing: border-box;     /* Ensure padding is included in the height/width */
+    margin: 0;                  /* Remove default margin */
+    position: relative;
+}
+
+.about-content {
+    margin-right: 20px;         /* Space from the right edge */
+    text-align: left;           /* Left-align the text within the container */
+    color: #212A31;             /* Text color, matching your color theme */
+    max-width: 500px;           /* Limit the width of the text container */
+    padding: 50px;
+   
+    border-radius: 10px;
+}
+
+/* Styling for the title and paragraph inside the card */
+.about-section h1 {
+    color: #003366;  /* Dark navy color */
+    font-size: 3rem;  /* Adjust the font size as needed */
+    margin-bottom: 5px;  /* Add margin for spacing */
+    margin-left: 95px;  /* Move the heading further to the right */
+    margin-top: 100px;  /* Add margin to push the heading down */
+}
+
+
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 30px;
+}
+
+/*------------------------------------------------ service section ------------------------------------------------------*/
+.service-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    background-image: url('1.1.png'); /* Add your image path here */
+    background-size: cover; /* Make sure the image covers the entire section */
+    background-position: center; /* Center the image */
+    min-height: 100vh; /* Makes the section span the full height of the viewport */
+}
+
+.service-section h2 {
+    font-size: 36px;
+    color: white; /* Navy Blue */
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 50px 20px; /* Increased vertical padding by 5% (from 20px to 25px) */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #003366; /* Navy Blue */
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #6c757d; /* Beige-like text color */
+    font-size: 16px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/*--------------------------------------------- Review Section -------------------------------------------------------*/
+.reviews-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-card {
+    background-image: url('1.1.png'), linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Add image with a dark overlay */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewer-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff; /* White text for name */
+}
+
+.reviewer-details p {
+    margin: 0;
+    color: #bbb; /* Lighter gray for role */
+}
+
+.review-text {
+    font-size: 1rem;
+    color: #fff; /* White text for the review */
+    line-height: 1.6;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+
+/*--------------------------------------------- Contact ME ----------------------------------------------------*/
+.contact-section {
+    background-image: url('1.9.png'); /* Add the background image URL here */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    padding: 40px;
+    border-radius: 1px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-top: 0; /* Ensure no extra space above */
+}
+
+.form-map-container {
+    display: flex;
+    gap: 40px; /* Space between form and map */
+    width: 100%;
+    max-width: 1200px; /* Maximum width for container */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+}
+
+h1 {
+    color: #d8d3d9; /* Light gray color for heading */
+    margin-bottom: 20px;
+    text-align: left; /* Left align the heading */
+    width: 100%;
+}
+
+.form-label {
+    color: #D3D9D4; /* Light gray color for label */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%; /* Make label take full width */
+}
+
+.form-control {
+    border: 1px solid #748D92; /* Light gray-blue border */
+    border-radius: 4px;
+    background-color: whitesmoke; /* Darker gray-blue background for inputs */
+    color: black; /* Light gray text color */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color:rgb(150, 198, 253); /* Dark blue background */
+    color: #124E66; /* Light gray text color */
+    border: 0.1rem solid #748D92; /* Light gray-blue border */
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.btn-success:hover {
+    background-color: #2E3944; /* Darker gray-blue on hover */
+    color: #EDEDED; /* Lighter text color */
+    border-radius: 1rem;
+    transition: 0.5s ease;
+    border: 0.2rem solid #124E66; /* Dark blue border on hover */
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+/* Map container styling */
+.map-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+.footer {
+    background-image: url('1.1.png'); /* Replace with your image file path */
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image within the footer */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #D3D9D4; /* Text color */
+    padding: 15px 5px; /* Reduced padding */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    padding: 5px; /* Minimal padding inside sections */
+    margin: 0; /* Removed margin */
+    text-align: left;
+}
+
+.footer h3, .footer h4 {
+    font-size: 16px; /* Smaller font size for headings */
+    color: #D3D9D4;
+    margin-bottom: 3px; /* Minimal margin below headings */
+}
+
+.footer p, .footer ul {
+    font-size: 12px; /* Smaller font size for body text */
+    color: #748D92;
+    line-height: 1.2; /* Reduced line height */
+}
+
+.footer-bottom {
+    border-top: 1px solid #2E3944;
+    padding: 5px 0; /* Reduced padding at the footer bottom */
+}
+
+.footer-bottom p {
+    font-size: 12px; /* Smaller font size for bottom text */
+    color: #D3D9D4;
+}
